@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 namespace Hyperf\Contract;
 
-interface FreqInterface
+interface FrequencyInterface
 {
     /**
      * Number of hit per time.
@@ -22,5 +22,5 @@ interface FreqInterface
     /**
      * Hits per second.
      */
-    public function freq(): float;
+    public function frequency(): float;
 }
