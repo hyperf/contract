@@ -12,8 +12,10 @@ declare(strict_types=1);
 
 namespace Hyperf\Contract;
 
-use Psr\Log\LoggerInterface;
-
-interface StdoutLoggerInterface extends LoggerInterface
+interface Sendable
 {
+    /**
+     * Send the response.
+     */
+    public function send();
 }
